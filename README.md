@@ -15,7 +15,7 @@ Este entorno esta desaroollado en PHP y se ejecuta localmente utilizando **XAMPP
 
 ## ⚙️ Requisitos Previos
 
-Para ejecutar este proyecto necesitas:
+Para ejecutar este proyecto necesitas instalar lo siguiente:
 
 ### 🖥️ Software
 - [Visual Studio Code (VS Code)](https://code.visualstudio.com/)
@@ -25,15 +25,15 @@ Para ejecutar este proyecto necesitas:
 
 ## 🚀 ¿Qué hace el proyecto?
 
+### Para el educador (vía panel de administración):
+- Crear, ver y eliminar usuarios con sus respectivos nodos.
+- Cada usuario tiene una entrada única en la base de datos `lightning.db`.
+
 ### Para los estudiantes:
 - Ingresan un identificador único entregado por el docente.
 - Ven sus credenciales (host, puerto, macaroon).
 - Obtienen un código QR para conectarse a su nodo con **Zeus Wallet**.
 - Siguen los pasos visuales guiados para usar Lightning Network.
-
-### Para el educador (vía panel de administración):
-- Crear, ver y eliminar usuarios con sus respectivos nodos.
-- Cada usuario tiene una entrada única en la base de datos `lightning.db`.
 
 ---
 
@@ -43,6 +43,5 @@ Para ejecutar este proyecto necesitas:
 2. Clona este repositorio o en la carpeta `C:\xampp\htdocs\`.
 3. Abre **VS Code** en esa carpeta.
 4. Accede a `http://localhost/ln-admin-sqlite/index.html` desde tu navegador y comparte este enlace con tus estudiantes, por medio del cual ingresaran a la plataforma.
-5. Para ingresar al panel de educador, ve a `http://localhost/ln-admin-sqlite/auth/login.php`.
+5. Para ingresar al panel de educador, ve a `http://localhost/ln-admin-sqlite/auth/login.php` para ver las credenciales de inicio de sesión abre el archivo `login.php` ubicado en la carpeta `auth` y ve a la linea 15, ahí podrás visualizar las credenciales y cambiarlas si deseas para lo cual tendrás que guardar los cambios con ctrl + S.
 
----
