@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ingreso de Estudiante</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f5f4ef;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+      color: #1d1d3c;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: -60%;
+      left: -60%;
+      width: 220%;
+      height: 220%;
+      background-image: url('assets/img/flash-orange.png');
+      background-repeat: repeat;
+      background-size: 70px 70px;
+      transform: rotate(45deg);
+      opacity: 0.15;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+
+    .login-container {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: #1d1d3c;
+    }
+
+    input[type="text"] {
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #f19524;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #d87f1f;
+    }
+
+    .brand {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #f19524;
+    }
+
+    .note {
+      font-size: 14px;
+      color: #6c757d;
+    }
+
+    img.logo {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <img src="assets/img/logo.jpg" alt="Logo" class="logo">
+    <div class="brand">Node Nation</div>
+    <p class="note">Ingreso de Estudiantes</p>
+    <form action="views/user.php" method="POST">
+      <input type="text" name="identifier" placeholder="Número de lista" required>
+      <button type="submit">Ingresar</button>
+    </form>
+  </div>
+</body>
+</html>
