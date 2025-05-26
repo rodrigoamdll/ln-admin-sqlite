@@ -1,0 +1,22 @@
+# Ignorar la base de datos SQLite y sus archivos auxiliares
+lightning.db
+*.sqlite
+*.db
+*.db-shm
+*.db-wal
+
+# Ignorar archivos de respaldo
+*.bak
+*.old
+*.tmp
+
+# Ignorar archivos de entorno local o configuración
+.env
+config.php
+
+# Ignorar archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar carpeta de logs (si la usas)
+logs/
