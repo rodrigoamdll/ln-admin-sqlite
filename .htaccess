@@ -1,0 +1,17 @@
+# Evitar listado de directorios
+Options -Indexes
+
+# Página personalizada para errores 403
+ErrorDocument 403 /ln-admin-sqlite/403.html
+
+
+# Protege archivos sensibles (opcional)
+<FilesMatch "\.(db|sqlite|env|bak|sql|ini|log)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# (Opcional) Redirección a login si acceden sin estar autenticados
+# RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^(.*)$ /ln-admin-sqlite/auth/login.php [L]

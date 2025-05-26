@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Acceso Denegado</title>
+    <style>
+        body {
+            background-color: #0c24c0;
+            color: #1d1d3c;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            margin: 0;
+        }
+        .error-box {
+            padding: 2rem;
+            background-color: white;
+            border: 5px solid #2a8fd7;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            max-width: 500px;
+        }
+        img {
+            max-width: 100px;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            font-size: 4rem;
+            color: #f19524;
+            margin: 0;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        a {
+            margin-top: 1rem;
+            display: inline-block;
+            background-color: #f19524;
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        a:hover {
+            background-color: #d17f1b;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-box">
+        <!-- ✅ Imagen centrada arriba del contenido -->
+        <img src="/ln-admin-sqlite/assets/img/403-error.png" alt="Logo">
+        
+        <h1>403</h1>
+        <p>Acceso denegado. No tienes permiso para ver esta carpeta.</p>
+        <a href="/ln-admin-sqlite/views/dashboard.php">Volver al Panel</a>
+    </div>
+</body>
+</html>
