@@ -43,5 +43,7 @@ Para ejecutar este proyecto necesitas instalar lo siguiente:
 2. Clona este repositorio o en la carpeta `C:\xampp\htdocs\`.
 3. Abre **VS Code** en esa carpeta.
 4. Accede a `http://localhost/ln-admin-sqlite/index.html` desde tu navegador y comparte este enlace con tus estudiantes, por medio del cual ingresaran a la plataforma.
-5. Para ingresar al panel de educador, ve a `http://localhost/ln-admin-sqlite/auth/login.php` para ver las credenciales de inicio de sesión abre el archivo `login.php` ubicado en la carpeta `auth` y ve a la linea 15, ahí podrás visualizar las credenciales y cambiarlas si deseas para lo cual tendrás que guardar los cambios con ctrl + S.
+5. Para ingresar al panel de educador, ve a `http://localhost/ln-admin-sqlite/auth/login.php` 
+6. Para ver las credenciales de inicio de sesión abre el archivo `login.php` ubicado en la carpeta `auth` y ve a la linea 15 ahí podrás visualizar las credenciales
+7. Si deseas cambiar las credenciales, siempre en la linea 15 del archivo `login.php` puedes modificar los valores que estan entre comillas dobles para lo cual tendrás que guardar los cambios presionando `Ctrl + S`.
 
